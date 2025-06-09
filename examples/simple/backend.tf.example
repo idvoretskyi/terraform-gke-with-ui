@@ -1,0 +1,34 @@
+# Example backend configuration for different environments
+# Copy this file to backend.tf and customize for your use case
+
+# Development environment
+terraform {
+  backend "gcs" {
+    bucket = "my-project-terraform-state"
+    prefix = "terraform/dev/gke-cluster"
+  }
+}
+
+# Staging environment
+# terraform {
+#   backend "gcs" {
+#     bucket = "my-project-terraform-state"
+#     prefix = "terraform/staging/gke-cluster"
+#   }
+# }
+
+# Production environment
+# terraform {
+#   backend "gcs" {
+#     bucket = "my-project-terraform-state"  
+#     prefix = "terraform/prod/gke-cluster"
+#   }
+# }
+
+# Multi-project setup
+# terraform {
+#   backend "gcs" {
+#     bucket = "my-organization-terraform-state"
+#     prefix = "terraform/project-a/gke-cluster"
+#   }
+# }

@@ -1,0 +1,32 @@
+# GCP Configuration
+# project_id = "your-gcp-project-id"  # Optional - uses current gcloud project if not set
+region = "us-central1"
+zone   = "us-central1-a"
+
+# Cluster Configuration
+cluster_name = "my-gke-cluster"
+environment  = "dev"
+
+# Node Configuration
+node_count   = 3
+machine_type = "e2-medium"
+disk_size_gb = 20
+preemptible  = true
+
+# Networking (optional - uses default VPC if not specified)
+# network    = "my-vpc"
+# subnetwork = "my-subnet"
+
+# Autoscaling (optional)
+enable_autoscaling = false
+min_node_count     = 1
+max_node_count     = 10
+
+# Monitoring Configuration
+monitoring_namespace = "monitoring"
+grafana_admin_password = "your-secure-password-here"
+prometheus_retention = "7d"
+
+# Storage Configuration
+prometheus_storage_size = "8Gi"
+grafana_storage_size    = "2Gi"

@@ -1,0 +1,47 @@
+# Terraform
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
+.terraform/
+.terraform.lock.hcl
+crash.log
+crash.*.log
+*.tfplan
+*.tfplan.*
+
+# Workspace directories (but keep example files)
+workspaces/
+!workspaces/.gitkeep
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.temp
+
+# Logs
+*.log
+
+# Backup files
+*.backup
+*.bak
+
+# Environment variables
+.env
+.env.local
+
+# Credentials
+credentials.json
+service-account.json
+*.pem
+*.key
